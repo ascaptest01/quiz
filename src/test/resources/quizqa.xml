@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="quiz qa">
+
+    <test name="qa quiz test">
+        <classes>
+            <class name="QuizYieldmoTest">
+                <parameter name="heroBanner" value="MAKING ATTENTION ACTIONABLE"/>
+                <parameter name="heroDescription" value="Elevate the ad experience with advanced consumer insights and brilliant creative formats on a premium marketplace."/>
+                <parameter name="ceoName" value="michael yavonditte"/>
+                <parameter name="ctoName" value="todd coleman"/>
+                <parameter name="boardNameOne" value="michael yavonditte"/>
+                <parameter name="boardNameTwo" value="brad burnham"/>
+                <parameter name="boardNameThree" value="doug chertok"/>
+                <parameter name="boardNameFour" value="allison goldberg"/>
+                <parameter name="danContentoBioFirst" value="Dan heads up the Partnerships team at Yieldmo, where he oversees strategy and relationships related to Yieldmo's Programmatic marketplace."/>
+
+                <methods>
+                    <include name="testSeleniumRodeoOne"/>
+                    <include name="testSeleniumRodeoTwo"/>
+                    <include name="testCEONameMatch"/>
+                    <include name="testCTONameMatch"/>
+                    <include name="testCTOImageVisible"/>
+                    <include name="testListFirstFourBoardMembers"/>
+                    <include name="testBioTextMatch"/>
+                    <include name="testBioContainsLinkedinLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
